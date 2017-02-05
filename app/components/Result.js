@@ -5,7 +5,7 @@ import {Link} from 'react-router';
 import { Table } from 'reactstrap';
 
 class Results extends React.Component{
-    constructor(){
+   /* constructor(){
         super();
         this.state ={
             data: ''
@@ -16,7 +16,7 @@ class Results extends React.Component{
         this.setState({
             data: this.props.gitData
         })
-    }
+    }*/
 
     render(){
         return(

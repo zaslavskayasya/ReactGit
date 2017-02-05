@@ -67,13 +67,30 @@
 }
 
 .card{
-    max-width: 30%;
+    max-width: 22%;
     float: right;
     position: fixed;
-    top: 430px;
-    right: 80px;
+    top: 439px;
+    right: 35px;
 }
 .avatar{
-    width: 100px;
+    width: 90px;
+}
+.CardTitle{
+    color: #9076c0;
+
+}
+.card h5{
+    color: #9076c0;
+}
+.card  p {
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: large;
 }
 
+.card span {
+    color: #050721;
+    font-size: smaller;
+
+}
