@@ -1,27 +1,79 @@
 .header{
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 250px;
+    background-color: #9076c0;
+    height: 320px;
+    padding: 80px 0 0 70px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+.jumbotron {
+    background-color: transparent;
+    padding: 0px;
+}
+.headerPart{
+    max-width: 300px;
+    float: left;
+    padding-right: 50px;
+}
+.headerPart img {
+    width: 90px;
+}
+.h1 {
+    font-size: 56px ;
+    margin: 0px;
+    padding-top:5px
+}
+.header_description{
+    margin: 0px;
+    font-weight: 100;
+}
+
+.SearchInput{
+    margin: 40px auto;
+    height: 10px;
+    width: 250px;
+    /* text-align: center; */
     padding: 20px;
-}
-.header_part{
-    text-align: center;
-    margin-top: 50px;
-    padding: 0px 50px;
-}
-.header_img_wrap{
+    font-size: 27px;
+    color: #ccc;
 
 }
-.header_img{
+
+.table{
+    margin-left: 20px;
+   width: 60%;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+.table_head{
+    background-color: #9076c0;
+}
+.table_head_name{
+    height: 30px;
+    border: 1px solid #ccc;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+.table_tr{
+    height: 30px;
+    border: 1px solid #ccc;
+}
+.table_td{
+    border: 1px solid #ccc;
+    height: 27px;
+    padding-left: 20px;
+
+}
+
+.card{
+    max-width: 30%;
+    float: right;
+    position: fixed;
+    top: 430px;
+    right: 80px;
+}
+.avatar{
     width: 100px;
 }
-.header_center_part{
-    color: aliceblue;
-    display: inline-block;
 
-}
-.header_center_text{
-    display: inline-block;
-}

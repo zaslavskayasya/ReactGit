@@ -1,24 +1,28 @@
 import React from 'react'
+import { Jumbotron } from 'reactstrap';
 
 
 class Header extends React.Component{
     render(){
         return(
             <header className="header">
-                <div className="header_part">
-                    <div className="header_img_wrap">
-                        <img  className="header_img" src="./img/react-logo.png"/>
+                <Jumbotron>
+                    <div className="headerPart">
+                        <h1 className="h1" > GitHub </h1>
+                        <p className="header_description"> Repositories Search App </p>
                     </div>
-                </div>
-                <div className="header_part, header_center_part">
-                    <h1 className="header_center_h1"> GitHub </h1>
-                    <p className="header_center_text"> Repositories Search App </p>
-                </div>
-                <div className="header_part">
-                    <div className="header_img_wrap">
-                        <img className="header_img" src="./img/github.png"/>
-                    </div>
-                </div>
+                      <div className="headerPart">
+                          <div >
+                              <img  src="./img/react.png"/>
+                          </div>
+                      </div>
+                      <div className="headerPart">
+                              <div >
+                              <img className="header_img" src="./img/Octocat.png"/>
+                         </div>
+                     </div>
+
+                </Jumbotron>
 
             </header>
 

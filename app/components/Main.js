@@ -1,10 +1,9 @@
 import React from 'react'
 import Header from './Header'
 import Results from './Result'
-import Form from './Form'
-import {Link} from 'react-router';
 import API from './API'
-import axios from 'axios'
+import {Form, Input} from 'reactstrap';
+import { Table } from 'reactstrap';
 
 class Main extends React.Component{
 
@@ -34,18 +33,30 @@ class Main extends React.Component{
         return(
             <div>
                 <Header />
-                <div>
-                    <input onChange={this.SearchInputChange.bind(this)}  type="text"/>
-                    {this.state.SearchWord}
-                </div>
-                {
-                    this.state.SearchResult.map((git, index) => {
-                        return ( <Results gitData={git} key={index} />
+                <Form >
+                    <Input className="SearchInput" onChange={this.SearchInputChange.bind(this)}
+                           type="text" placeholder="Search here" />
 
-                        )
-                    })
-                }
+                </Form>
 
+                <Table className="table" hover>
+                    <thead className="table_head">
+                    <tr>
+                        <th className="table_head_name">Repositories</th>
+                        <th className="table_head_name">Name</th>
+                        <th className="table_head_name">Stars</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {
+                        this.state.SearchResult.map((git, index) => {
+                            return ( <Results gitData={git} key={index} />
+
+                            )
+                        })
+                    }
+                    </tbody>
+                </Table>
 
                 {this.props.children}
 
