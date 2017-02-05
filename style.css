@@ -1,0 +1,27 @@
+.header{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 250px;
+    padding: 20px;
+}
+.header_part{
+    text-align: center;
+    margin-top: 50px;
+    padding: 0px 50px;
+}
+.header_img_wrap{
+
+}
+.header_img{
+    width: 100px;
+}
+.header_center_part{
+    color: aliceblue;
+    display: inline-block;
+
+}
+.header_center_text{
+    display: inline-block;
+}
