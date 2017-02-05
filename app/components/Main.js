@@ -34,7 +34,6 @@ class Main extends React.Component{
         return(
             <div>
                 <Header />
-
                 <div>
                     <input onChange={this.SearchInputChange.bind(this)}  type="text"/>
                     {this.state.SearchWord}
@@ -48,19 +47,10 @@ class Main extends React.Component{
                 }
 
 
-
-                <Link to="/results"><button>RES!</button> </Link>
-                <Link to="/OneRepos"><button>One repo</button></Link>
-
-
                 {this.props.children}
 
              </div>
-
-
-
-
-        )
+         )
     }
 }
 export default Main

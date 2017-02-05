@@ -11,7 +11,7 @@ ReactDOM.render(
         <Router history={hashHistory}>
            <Route path="/" component={Main}>
                <Route path="/results" component={Result} />
-               <Route path="/OneRepos" component={OneRepos}/>
+               <Route path="/OneRepos/:info/:stars" component={OneRepos}/>
            </Route>
         </Router>
     ,
