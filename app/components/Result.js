@@ -1,22 +1,8 @@
 import React from 'react'
-import OneRepos from './OneRepos'
-import Form from '../../Form'
 import {Link} from 'react-router';
-import { Table } from 'reactstrap';
+
 
 class Results extends React.Component{
-   /* constructor(){
-        super();
-        this.state ={
-            data: ''
-        }
-    }
-
-    componentDidMount() {
-        this.setState({
-            data: this.props.gitData
-        })
-    }*/
 
     render(){
         return(
@@ -31,9 +17,8 @@ class Results extends React.Component{
                        + "/"
                        + this.props.gitData.watchers
 
-
                        }  >
-                            {this.props.gitData.full_name},{this.props.key}
+                            {this.props.gitData.full_name}
                        </Link>
                    </td>
                    <td className="table_td">{this.props.gitData.owner.login}</td>

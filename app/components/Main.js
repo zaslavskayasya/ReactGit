@@ -36,7 +36,6 @@ class Main extends React.Component{
                 <Form >
                     <Input className="SearchInput" onChange={this.SearchInputChange.bind(this)}
                            type="text" placeholder="Search here" />
-
                 </Form>
 
                 <Table className="table" hover>
