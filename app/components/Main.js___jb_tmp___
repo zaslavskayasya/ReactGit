@@ -23,7 +23,7 @@ class Main extends React.Component{
         API.getGitSearch(x).then((dataR)=> {
             /*console.log('done!');*/
             dataR.sort(function (a, b) {
-                return b.stargazers_count - b.stargazers_count
+                return b.stargazers_count - a.stargazers_count
             })
 
             this.setState({

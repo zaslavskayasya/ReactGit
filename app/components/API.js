@@ -10,8 +10,8 @@ let API = {
                     }
                 }
             ).then(function(data){
-                resolve(data.data);
-                console.log(data.data.items);
+                resolve(data.data.items);
+               /* console.log(data.data.items);*/
             })
         })
     }

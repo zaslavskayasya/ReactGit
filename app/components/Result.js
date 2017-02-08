@@ -4,6 +4,7 @@ import {Link} from 'react-router';
 
 class Results extends React.Component{
 
+
     render(){
         return(
             <tr className="table_tr">
@@ -24,9 +25,6 @@ class Results extends React.Component{
                    <td className="table_td">{this.props.gitData.owner.login}</td>
                    <td className="table_td">{this.props.gitData.stargazers_count}</td>
             </tr>
-
-
-
         )
     }
 }
